@@ -1,162 +1,118 @@
-.banner_area {
-    position: relative;
-    background: url(https://www.nacionmulticultural.unam.mx/mezinal/img/banner_eolicos.jpg) no-repeat center;
-    z-index: 1;
-    min-height: 392px;
+nav{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.nav-item{
+    color: #274C5B;
+}
+
+.bi{
+    color: white;
+}
+.search-bar{
+    width: 100%;
+    max-width: 300px;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 0px 10px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 12px 10px;
+    color: rgba(0,0,0,.6);
+}
+
+::placeholder{
+    color:rgba(0,0,0,.5);
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color:  #7EB693;
+    cursor: pointer;
+}
+
+.bg-image {
+    background-image: url('../images/eolico.png');
     background-size: cover;
-    padding-top: 0 !important;
+    padding-top: 12%;
+    padding-bottom: 12%;
 }
 
-.header_area.white-header .navbar .nav .nav-item .nav-link {
-    color: #ffffff;
+.mask {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
-.banner_area .banner_inner .overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 4, 71, 0.42);
+.titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 55%;
+    margin: auto;
 }
 
-.banner_area .banner_inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-height: 392px;
-    z-index: 1;
+footer.py-2 {
+    background: #F9F8F8;
 }
 
-a {
-    text-decoration: none !important;
-    transition: all 0.3s ease-in-out;
+footer>h5,
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #525C60;
 }
 
-.container,
-.container-fluid,
-.container-xxl,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
+footer>h,
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #525C60;
 }
 
-.banner_area .banner_inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-height: 392px;
-    z-index: 1;
-}
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 0.8rem;
+    }
 
-.banner_area .banner_inner .banner_content {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-}
+    footer>h5,
+    p {
+        font-size: 0.5rem;
+        margin-bottom:0%;
+    }
 
-.banner_area .banner_inner .banner_content h2 {
-    color: #fff;
-    font-size: 35px;
-    margin-bottom: 0px;
-    text-shadow: 2px 2px 2px #0d0d0d;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-.align-items-center {
-    align-items: center !important;
-}
-
-
-.header_area {
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-    transition: background 0.4s, all 0.3s linear;
-}
-
-@media (max-width: 991px) {
-    .header_area .navbar {
-        background: #868686;
+    footer>h,
+    h5 {
+        font-size: 0.5rem;
     }
 }
 
-
-.header_area.white-header .navbar .nav .nav-item.active .nav-link,
-.header_area.white-header .navbar .nav .nav-item:hover .nav-link {
-    color: #fdc632;
-}
-
-.header_area .navbar .nav .nav-item .nav-link {
-    font: 500 16px/80px "Rubik", sans-serif;
-    text-transform: capitalize;
-    color: #002347;
-    padding: 0px;
-    display: inline-block;
-}
-
-.header_area .navbar .nav .nav-item {
-    margin-right: 45px;
-    margin-right: 30px;
-}
-
-@media (max-width: 1199px) {
-    .header_area .navbar .nav .nav-item {
-        margin-right: 28px;
+@media (max-width: 575px) {
+    .images {
+        width: 40%;
+        height: auto;
     }
 }
 
-@media (max-width: 991px) {
-    .header_area .navbar-collapse {
-        max-height: 340px;
-        overflow-y: scroll;
+@media (max-width: 1090px) {
+    .nav-link{
+        font-size: 0.8rem;
     }
 }
 
-@media (max-width: 991px) {
-    .header_area .navbar .nav .nav-item .nav-link {
-        line-height: 40px;
-        margin-right: 0px;
-        display: block;
-        border-bottom: 1px solid #ededed33;
-        border-radius: 0px;
+@media (max-width: 992px) {
+    .search-bar{
+        margin: auto;
+        width: 80%;
+        max-width: 80%;
     }
-}
-
-
-
-.footer-area {
-    margin-top: 0px;
-    padding: 20px 0px;
-}
-
-.footer-area {
-    background: #012;
-    font-size: 11.5px;
-}
-
-.footer-area .single-footer-widget ul li {
-    margin-bottom: 15px;
-    list-style: none;
-}
-
-.footer-area .single-footer-widget ul {
-    padding-left: 0;
-}
-
-.footer-area .single-footer-widget ul li a {
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    color: #7b838a;
 }

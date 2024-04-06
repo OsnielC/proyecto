@@ -37,4 +37,12 @@ class EoloelectricasController extends Controller
     public function autor(){
         return view('eoloelectricas.autor');
     }
+
+    public function documento(){
+        return view('eoloelectricas.documento');
+    }
+
+    public function titulo(){
+        return view('eoloelectricas.titulo');
+    }
 }

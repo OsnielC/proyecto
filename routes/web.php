@@ -20,6 +20,7 @@ Route::get('/', function () {
 Route::controller(EoloelectricasController::class)->group(function(){
     Route::get('eoloelectricas', 'index');
     Route::get('eoloelectricas/tema', 'tema');
+    Route::get('eoloelectricas/documento', 'documento');
     Route::get('eoloelectricas/lugar', 'lugar');
     Route::get('eoloelectricas/tipo', 'tipo');
     Route::get('eoloelectricas/fecha', 'fecha');
@@ -28,3 +29,6 @@ Route::controller(EoloelectricasController::class)->group(function(){
     Route::get('eoloelectricas/actor', 'actor');
     Route::get('eoloelectricas/autor', 'autor');
 });
+
+Route::get('/busqueda', 'BusquedaController@buscar');
+
